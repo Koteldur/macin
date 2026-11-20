@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MACIN - Menú</title>
+    <meta name="description" content="Menú de navegación de MACIN." />
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="macin.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- 1. Cambiamos al logo blanco -->
+            <a href="#" class="logo" aria-label="MACIN - Inicio">
+                <img src="logo-blanco.svg" alt="MACIN" style="height: 24px; width: auto" />
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#laser-cladding">Laser Cladding</a></li>
+                <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+                <!-- ACCIONES MÓVILES (Se mantienen igual) -->
+                <li class="mobile-actions">
+                    <a href="tel:+56226460984" class="phone-link">
+                        <i data-lucide="phone"></i>
+                        <span>+56 2 2646 0984</span>
+                    </a>
+                    <a href="#" class="btn-whatsapp">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+
+            <!-- ACCIONES ESCRITORIO -->
+            <div class="nav-actions">
+                <a href="tel:+56226460984" class="phone-link">
+                    <i data-lucide="phone"></i>
+                    <!-- Quitamos los colores grises en línea y lo dejamos blanco -->
+                    <span>+56 2 2646 0984</span>
+                </a>
+                <!-- 2. Agregamos la clase btn-white -->
+                <a href="#" class="btn-whatsapp btn-white">
+                    <i data-lucide="message-circle"></i>
+                    WhatsApp
+                </a>
+            </div>
+
+            <!-- El botón hamburguesa se mantiene igual -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+
+        <section class="hero" style="background-image: url('hero.png');">
+            <div class="hero-content">
+                <div class="badge badge-glass">
+                    <span class="dot"></span>
+                    +35 AÑOS RECUPERANDO COMPONENTES
+                </div>
+                <h1 class="hero-title">La precisión también se verifica</h1>
+                <p class="hero-subtitle">Recuperamos componentes críticos antes de reemplazarlos, con trazabilidad y tecnología propia</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">Llámanos aquí</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="services-grid-section">
+        <div class="grid-cards">
+            <article class="card-overlay-card">
+                <img src="img3.png" alt="Reparación de Cilindros" class="card-bg" loading="lazy" />
+                <div class="card-overlay">
+                    <span class="card-tag">MECANIZADOS</span>
+                    <div class="card-bottom">
+                        <h2 class="card-title">Reparación de Cilindros</h2>
+                        <a href="#" class="btn-card">Ver más</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-overlay-card">
+                <img src="img2.png" alt="Estructuras Pesadas" class="card-bg" loading="lazy" />
+                <div class="card-overlay">
+                    <span class="card-tag">CALDERERÍA PESADA</span>
+                    <div class="card-bottom">
+                        <h2 class="card-title">Estructuras Pesadas</h2>
+                        <a href="#" class="btn-card">Ver más</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-overlay-card">
+                <img src="img5.png" alt="Laser Cladding" class="card-bg" loading="lazy" />
+                <div class="card-overlay">
+                    <span class="card-tag">MECANIZADOS</span>
+                    <div class="card-bottom">
+                        <h2 class="card-title">Laser Cladding</h2>
+                        <a href="#" class="btn-card">Ver más</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-overlay-card">
+                <img src="img4.png" alt="Recuperación de Piezas" class="card-bg" loading="lazy" />
+                <div class="card-overlay">
+                    <span class="card-tag">INGENIERÍA INVERSA</span>
+                    <div class="card-bottom">
+                        <h2 class="card-title">Recuperación de Piezas</h2>
+                        <a href="#" class="btn-card">Ver más</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-legal-text">
+                <p>
+                    Los servicios de MACIN están sujetos a evaluación técnica, disponibilidad y condiciones de cada componente o equipo. Los presupuestos, plazos de entrega y alcances de los trabajos serán definidos según los requerimientos de cada proyecto y previa aprobación del cliente. Las imágenes y descripciones de este sitio son referenciales. Los servicios, capacidades técnicas y condiciones pueden estar sujetos a cambios. Para consultas sobre nuestros servicios, cotizaciones o proyectos, contáctanos a través de nuestros canales oficiales.
+                </p>
+                <p>
+                    <strong>Más formas de contactarnos:</strong>
+                    <a href="#" class="footer-link">Solicita una cotización</a> o
+                    <a href="#" class="footer-link">comunícate con nuestro equipo comercial</a>.
+                </p>
+            </div>
+
+            <hr class="footer-divider" />
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2026 MACIN. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacidad</a> |
+                    <a href="#">Términos y condiciones</a> |
+                    <a href="#">Mapa del sitio</a>
+                </div>
+                <div class="footer-locale">
+                    <p>Chile (Español)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <script src="macin.js"></script>
+</body>
+</html>
